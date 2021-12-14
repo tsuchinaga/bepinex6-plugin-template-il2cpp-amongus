@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json.schemastore.org/template",
+  "author": "tsuchinaga",
+  "classifications": [
+    "BepInEx",
+    "BepInEx 6",
+    "Plugin",
+    "Il2Cpp",
+    "AmongUs"
+  ],
+  "identity": "BepInEx6PluginIl2CppAmongUs",
+  "name": "BepInEx6PluginIl2CppAmongUs",
+  "shortName": "bep6plugin_il2cpp_amongus",
+  "description": "BepInEx6 Plugin Il2Cpp for AmongUs",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "sourceName": "BepInEx6PluginTemplateIl2CppAmongUs"
+}
