@@ -22,7 +22,8 @@ namespace BepInEx6PluginTemplateIl2CppAmongUs
             Logger = Log;
 
             Logger.LogInfo($"Plugin {PluginVersion.Guid} {PluginVersion.Version} is loaded!");
-            Text.LoadTextJson("announce_text.json");
+            Text.LoadAllTextJson();
+            Image.LoadAllPngImage();
 
             EnableLocalGame = Config.Bind("LocalGame", "Enable", false);
             EnableOnlineGame = Config.Bind("OnlineGame", "Enable", false);

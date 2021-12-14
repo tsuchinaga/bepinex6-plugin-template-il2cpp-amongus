@@ -70,6 +70,22 @@ namespace BepInEx6PluginTemplateIl2CppAmongUs.Helpers
                     }
                 }
             }
+
+            Plugin.Logger.LogInfo($"{fullPath} loaded");
+        }
+
+        public static void LoadAllTextJson()
+        {
+            var assembly = Assembly.GetExecutingAssembly();
+            foreach (var name in assembly.GetManifestResourceNames())
+            {
+                if (name.EndsWith("text.json"))
+                {
+                    var paths = name.Split(".");
+                    if (paths.Length < 2) continue;
+                    LoadTextJson($"{paths[^2]}.{paths[^1]}");
+                }
+            }
         }
     }
 }
